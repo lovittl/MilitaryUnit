@@ -1,0 +1,18 @@
+﻿First part
+Choose one option:
+Main class first
+Write your main class first. This will consist of your variables and methods that execute themission of your unit. Since you have not built your unit, you cannot actually run the program, so you will have to supply your methods with appropriate print statements to have your program run to completion.
+Parent classes first
+Write your parent classes first. These will be the classes you will subclass to create the appropriate objects. For example, you might have a personnel class, a weapons class, a missions class, and a vehicles class. 
+Second Part
+If you chose to implement Option 1 in the first part, implement Option 2 in in this part. If you chose to implement Option 2 in the first part, in this part, implement the appropriate subclasses. For example, if one of your parent classes is Weapon, in this class you may elect to implement SmallCaliberWeapon, IndirectFireWeapon, and DirectFireWeapon.
+Intermediate Difficulty
+Third part
+If you chose to implement Option 2 in the first part, in this part implement the appropriate methods as virtual and overidden methods, or use another suitable technique. As an example, if you have a method named mount(), it will exhibit different behavior depending on whether it's called on a type RifleSight or a type Helicopter. As another example, if you have a method named load(), it will exhibit different behavior depending on whether it's called on a type AutomaticWeapon or a type Howitzer. Otherwise, implement your subclasses.
+Advanced Difficulty
+Finally block
+If you chose to implement Option 2 in the first part, in this part implement Option 1 in this part. Otherwise, implement the methods as instructed for the third part.
+Note that you may chose to implement the main class first and the data type classes second, or the data type classes first and the main class second. In both cases, you need a main class to instantiate objects of the data types you create and exercise the methods of those data types. Generally most developers will implement the data types first and the main class second. Doing it the other way is part of a discipline called test driven development, and is associated with agile techniques. Regardless of what you choose, you should be familiar with both processes.
+Submission
+Upload all code created in the process of completing this exercise. Include output for each executable in a separate, clearly named file or, if appropriate, as a comment at the top of your source file.
+Please ensure your code compiles, runs, and is formatted in a readable manner.
