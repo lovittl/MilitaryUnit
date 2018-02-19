@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace MilitaryUnit
 {
-    class Trucks
+    class Trucks : Vehicles
     {
-
+        // Method to pass truckType back to console from menu
+        public override string TypeTruck(string truckType)
+        {
+            //string truck1 = "halftrack";
+            Console.WriteLine($"{truckType}");
+            return truckType;
+        }
     }
 }

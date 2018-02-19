@@ -4,16 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MilitaryUnit
+namespace MilitaryUnit 
 {
-    class MilitaryUnit // base class
+    // Program Control Class
+    class MilitaryUnit 
     {
         // Objects of class types
-        public Personel troops = new Personel();
-        public Trucks halftrack = new Trucks();
-        public Helecopters cobra = new Helecopters();
-        public Tanks sherman = new Tanks();
-
+        
+        //public Helecopters cobra = new Helecopters();
+        //public Tanks sherman = new Tanks();
+        string V1 = "deploy vehicle";
+        string V2 = "deploy vehicle";
+        string V3 = "deploy vehicle";
+        public string N1 = "all quiet";
+        public string N2 = "all quiet";
+        public string N3 = "all quiet";
 
         // Allows user to play the game until they are done and choose to quit
         public void Run()
@@ -33,8 +38,9 @@ namespace MilitaryUnit
         // Displays Mission Name
         public void Mission()
         {
-
-            Console.WriteLine($"Mission {"Desert Chrush"}");
+            Console.WriteLine($"Mission Desert Crush");
+            Console.WriteLine($"Vehicles Deployed| {V1} | {V2} | {V3} |");
+            Console.WriteLine($"Engine Noise| {N1} | {N2} | {N3} |");
         }
 
         // Displays main menu options
@@ -65,31 +71,49 @@ namespace MilitaryUnit
 
                     switch (choice)
                     {
+                        // Handles Main Menu selection 1 Truck
                         case 1:
+
                             Console.WriteLine("\nPersonel Loading into Halftrack:");
-                            Trucks halftrack = new Trucks();
-                            //halftrack.StartEngine("Brm brm");
+                            Trucks theTruck = new Trucks();
+                            V1 = theTruck.TypeTruck("Halftrack");
+                            N1 = theTruck.StartEngine("Brm brm");
 
                             break;
 
+                        // Handles Main Menu selection 2 Helos
                         case 2:
+
                             Console.WriteLine("\nPersonel Loading into Helo:");
+                            Helecopters theHelo = new Helecopters();
+                            V2 = theHelo.TypeHelo("Huey");
+                            N2 = theHelo.StartEngine("wop, wop, wop");
+                            
                             break;
 
+
+                        // Handles Main Menu selection 3 Tank
                         case 3:
-                            Console.WriteLine("\nPersonel Loading into Tank:"); ;
+                            Console.WriteLine("\nPersonel Loading into Tank:");
+                            Tanks theTank = new Tanks();
+                            V3 = theTank.TypeTank("Sherman");
+                            N3 = theTank.StartEngine("sqeek, rrrrr, sqeek, rrrrr");
+
                             break;
 
+                        // Exit case
                         case 4:
-                            Console.WriteLine("\nThanks for playing!\n");
+                            Console.WriteLine("\nMission Accomplished!\n");
                             Console.Write("Press enter to exit.");
                             Console.ReadLine();
                             quit = true;
                             break;
 
+                        // Returns "please try again" for invalid selection 
                         default:
                             isValid = false;
                             Console.WriteLine("please try again.");
+                            DispayMainMenu();
                             break;
                     }
                 }

@@ -44,11 +44,11 @@
   <ItemGroup>
     <Compile Include="Helecopters.cs" />
     <Compile Include="MilitaryUnit.cs" />
-    <Compile Include="Personel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tanks.cs" />
     <Compile Include="Trucks.cs" />
+    <Compile Include="Vehicles.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
