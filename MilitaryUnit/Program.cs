@@ -19,8 +19,8 @@ namespace MilitaryUnit
             Console.ReadLine();
 
             //Creates an instance of the MilitaryUnit class
-            //MilitaryUnit MUnit = new MilitaryUnit();
-            //MUnit.Run();
+            MilitaryUnit MUnit = new MilitaryUnit();
+            MUnit.Run();
         }
     }
 }
